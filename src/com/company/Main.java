@@ -18,6 +18,10 @@ public class Main {
         stopTime = System.nanoTime();
         System.out.println(stopTime - startTime);
 
-
+        startTime = System.nanoTime();
+        Lc_35 lc_35 = new Lc_35();
+        System.out.println(lc_35.searchInsert(new int[]{1, 2, 6, 29,56,90},6));
+        stopTime = System.nanoTime();
+        System.out.println(stopTime - startTime);
     }
 }
