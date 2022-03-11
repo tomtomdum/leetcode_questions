@@ -18,5 +18,10 @@ public class Main {
         stopTime = System.nanoTime();
         System.out.println(stopTime - startTime);
 
+        startTime = System.nanoTime();
+        System.out.println(Arrays.toString(lc_1.twoSumButFaster(new int[]{2, 7, 11, 15}, 9)));
+        stopTime = System.nanoTime();
+        System.out.println(stopTime - startTime);
+
     }
 }

@@ -13,4 +13,17 @@ public class Lc_1 {
             }
         } return null;
     }
+    public int[] twoSumButFaster(int[] nums, int target) {
+        int[] answer = new int[2];
+        int j = 1;
+        for (int i =0; i < nums.length; i++){
+            if( i != j && nums[i] + nums[j] == target){
+                answer[0] = i;
+                answer[1] = j;
+                return answer;
+            }
+            j++;
+        } return null;
+    }
+
 }
