@@ -19,9 +19,8 @@ public class Lc_13 {
 
             for(int i =0; i < containNumbers.length; i++) {
 
-                if (containNumbers[i] < containNumbers[i+1]){
+                if ( i+1 < containNumbers.length && containNumbers[i] < containNumbers[i+1]){
                     finalNumber += containNumbers[i+1] - containNumbers[i];
-                    i++;
                 }else {
                     finalNumber += containNumbers[i];
                 }
